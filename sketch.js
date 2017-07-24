@@ -3,6 +3,7 @@ var sizeScale = 0.6;
 var pipes = [];
 var totalScore = 0;
 function setup() {
+    frameRate(60);
     createCanvas(400*sizeScale,600*sizeScale);
     bird = new Bird();
     pipes.push(new Pipe());
