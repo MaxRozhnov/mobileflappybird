@@ -8,6 +8,12 @@
     <script src="bird.js"></script>
     <script src="pipe.js"></script>
     <script src="sketch.js"></script>
+    <script type = "text/javascript" language = "javascript">
+        $('.no-zoom').bind('touchend', function(e) {
+          e.preventDefault();
+          $(this).click();
+          })
+    </script>    
 
   <style> body {padding: 0; margin: 0;} </style>
   </head>
