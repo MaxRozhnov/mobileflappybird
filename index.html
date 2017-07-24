@@ -9,10 +9,18 @@
     <script src="pipe.js"></script>
     <script src="sketch.js"></script>
     <script type = "text/javascript" language = "javascript">
-        $('.no-zoom').bind('touchend', function(e) {
+        function preventZoom(e) {
+          var t2 = e.timeStamp;
+          var t1 = e.currentTarget.dataset.lastTouch || t2;
+          var dt = t2 - t1;
+          var fingers = e.touches.length;
+          e.currentTarget.dataset.lastTouch = t2;
+
+          if (!dt || dt > 500 || fingers > 1) return; // not double-tap
+
           e.preventDefault();
-          $(this).click();
-          })
+          e.target.click();
+        }
     </script>    
 
   <style> body {padding: 0; margin: 0;} </style>
