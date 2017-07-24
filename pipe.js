@@ -3,7 +3,7 @@ function Pipe() {
     this.x = width + 50;
     this.width = 120*sizeScale;
     this.speed = -3*sizeScale;
-    this.holeSize = 280*sizeScale;
+    this.holeSize = 280*sizeScale; // были 200
     this.holeHeight = random(40 + this.holeSize/2, height - 40 - this.holeSize/2);
     this.alredyEvaded = false;
     
