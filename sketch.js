@@ -47,7 +47,7 @@ function draw() {
         textAlign(CENTER);
         noStroke();
         fill(241,185,43);
-        text(totalScore,0,width/2 - 50 ,width + 50,200);
+        text(totalScore,width/2 - 50,0,width/2 + 50,height);
     }
 }  
 
