@@ -1,5 +1,5 @@
 var pipe;
-var sizeScale = 1;
+var sizeScale = 0.6;
 var pipes = [];
 var totalScore = 0;
 function setup() {
